@@ -25,6 +25,7 @@ import {
 } from './utils';
 import { DataSourceEngineType } from '../../../../../../../plugins/data_source/common/data_sources';
 import { IndexDataStructureCreator } from './index_data_structure_creator/index_data_structure_creator';
+import odinMark from '../../../../assets/odin_mark.svg';
 
 export const DELIMITER = '::';
 
@@ -32,7 +33,7 @@ export const indexTypeConfig: DatasetTypeConfig = {
   id: DEFAULT_DATA.SET_TYPES.INDEX,
   title: 'Indexes',
   meta: {
-    icon: { type: 'logoOpenSearch' },
+    icon: { type: odinMark },
     tooltip: 'OpenSearch Indexes',
     searchOnLoad: true,
     cacheOptions: false,

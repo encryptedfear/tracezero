@@ -28,6 +28,7 @@ import { generateTimestampFilter } from './integration_timefield_strategies';
 import { CONSOLE_PROXY, INTEGRATIONS_BASE } from '../../../../framework/utils/shared';
 import { IntegrationConfig, ParsedIntegrationAsset, Result } from '../../../../framework/types';
 import { SQLService } from '../../../../framework/requests/sql';
+import odinMark from '../../../assets/odin_mark.svg';
 
 export interface IntegrationSetupInputs {
   displayName: string;
@@ -348,7 +349,7 @@ export function LoadingPage() {
   return (
     <>
       <EuiEmptyPrompt
-        icon={<EuiLoadingLogo logo="logoOpenSearch" size="xl" />}
+        icon={<EuiLoadingLogo logo={odinMark} size="xl" />}
         title={<h2>Setting Up the Integration</h2>}
         body={<p>This can take several minutes.</p>}
       />

@@ -22,6 +22,7 @@ import { WorkspaceUseCase } from '../../types';
 import { RightSidebarScrollField, RIGHT_SIDEBAR_SCROLL_KEY } from './utils';
 import { WorkspaceCreateActionPanel } from './workspace_create_action_panel';
 import { privacyType2TextMap, WorkspacePrivacyItemType } from '../workspace_form/constants';
+import odinMark from '../../assets/odin_mark.svg';
 
 const SCROLL_FIELDS = {
   [RightSidebarScrollField.Name]: i18n.translate('workspace.form.summary.panel.name.title', {
@@ -158,7 +159,7 @@ export const WorkspaceFormSummaryPanel = ({
   privacyType,
 }: WorkspaceFormSummaryPanelProps) => {
   const useCase = availableUseCases.find((item) => item.id === formData.useCase);
-  const useCaseIcon = useCase?.icon || 'logoOpenSearch';
+  const useCaseIcon = useCase?.icon || odinMark;
   const isPermissionEnabled = application?.capabilities.workspaces.permissionEnabled;
 
   return (

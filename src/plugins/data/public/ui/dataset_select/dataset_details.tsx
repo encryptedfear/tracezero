@@ -19,6 +19,7 @@ import { useOpenSearchDashboards } from '../../../../opensearch_dashboards_react
 import { DetailedDataset } from './dataset_select';
 import { DEFAULT_DATA } from '../../../common/constants';
 import { IDataPluginServices } from '../../types';
+import odinMark from '../../assets/odin_mark.svg';
 
 export interface DatasetDetailsProps {
   dataset?: DetailedDataset;
@@ -143,7 +144,7 @@ export const DatasetDetailsBody: FC<DatasetDetailsProps> = ({ dataset, className
               <EuiIcon
                 type={
                   dataset.type === DEFAULT_DATA.SET_TYPES.INDEX_PATTERN
-                    ? 'logoOpenSearch'
+                    ? odinMark
                     : datasetService.getType(dataset.type)?.meta?.icon?.type || 'database'
                 }
                 size="s"

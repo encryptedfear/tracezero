@@ -1,0 +1,21 @@
+/* ODIN radar spinner
+   The mark's rings are concentric, so rotating the whole element makes
+   only the beam appear to sweep — a clean radar-scan loader, no SMIL needed.
+
+   Usage:
+     <img class="odin-spin" src="odin-spinner.svg" width="40" height="40" alt="Loading">
+     <img class="odin-spin odin-spin--fast" src="odin-spinner.svg" width="24" height="24" alt="">
+*/
+@keyframes odin-sweep { to { transform: rotate(360deg); } }
+
+.odin-spin {
+  animation: odin-sweep 1.4s linear infinite;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+.odin-spin--fast { animation-duration: 0.9s; }
+.odin-spin--slow { animation-duration: 2.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .odin-spin { animation: none; }
+}

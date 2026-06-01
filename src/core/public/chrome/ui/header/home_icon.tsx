@@ -16,7 +16,7 @@ interface Props {
  * Use branding configurations to render the header mark on the nav bar.
  */
 export const HomeIcon = ({ branding, logos }: Props) => {
-  const { applicationTitle = 'opensearch dashboards', useExpandedHeader = true } = branding;
+  const { applicationTitle = 'ODIN', useExpandedHeader = true } = branding;
 
   const { url: markURL, type: markType } = logos.Mark;
 

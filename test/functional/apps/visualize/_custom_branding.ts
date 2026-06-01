@@ -24,10 +24,10 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
     'https://opensearch.org/wp-content/uploads/2025/01/opensearch_mark_default.svg';
   const expectedMarkLogoDarkMode =
     'https://opensearch.org/wp-content/uploads/2025/01/opensearch_mark_darkmode.svg';
-  const applicationTitle = 'OpenSearch';
-  const expectedWelcomeMessage = 'Welcome to OpenSearch';
+  const applicationTitle = 'ODIN';
+  const expectedWelcomeMessage = 'Welcome to ODIN workspaces';
 
-  describe('OpenSearch Dashboards branding configuration', function customHomeBranding() {
+  describe('ODIN Dashboards branding configuration', function customHomeBranding() {
     describe('should render overview page', async () => {
       this.tags('includeFirefox');
 

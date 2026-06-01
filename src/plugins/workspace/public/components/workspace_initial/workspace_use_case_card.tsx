@@ -37,6 +37,7 @@ import {
 } from '../../../common/constants';
 import { navigateToWorkspacePageWithUseCase } from '../utils/workspace';
 import { getFirstUseCaseOfFeatureConfigs, getUseCaseUrl } from '../../utils';
+import odinMark from '../../assets/odin_mark.svg';
 
 interface WorkspaceUseCaseCardProps {
   useCase: WorkspaceUseCase;
@@ -55,7 +56,7 @@ export const WorkspaceUseCaseCard = ({
   isDashboardAdmin,
   handleClickUseCaseInformation,
 }: WorkspaceUseCaseCardProps) => {
-  const useCaseIcon = useCase.icon || 'logoOpenSearch';
+  const useCaseIcon = useCase.icon || odinMark;
 
   // Display the recently accessed workspaces first, and then arrange other workspaces in alphabetical order.
   const sortedWorkspaceList: UpdatedWorkspaceObject[] = useMemo(() => {

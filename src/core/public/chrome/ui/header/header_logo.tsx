@@ -105,7 +105,7 @@ export function HeaderLogo({
 }: Props) {
   const forceNavigation = useObservable(observables.forceNavigation$, false);
   const navLinks = useObservable(observables.navLinks$, []);
-  const { applicationTitle = 'opensearch dashboards' } = branding;
+  const { applicationTitle = 'ODIN' } = branding;
 
   const {
     [backgroundColorScheme === 'dark' ? 'dark' : 'light']: { url: logoURL },

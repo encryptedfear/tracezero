@@ -30,6 +30,7 @@ import { WorkspaceUseCase } from '../../types';
 import { WorkspaceUseCaseCard } from './workspace_use_case_card';
 import { WorkspaceUseCaseFlyout } from '../workspace_form';
 import { navigateToWorkspacePageWithUseCase } from '../utils/workspace';
+import odinMark from '../../assets/odin_mark.svg';
 
 export interface WorkspaceInitialProps {
   registeredUseCases$: BehaviorSubject<WorkspaceUseCase[]>;
@@ -150,7 +151,7 @@ export const WorkspaceInitial = ({ registeredUseCases$ }: WorkspaceInitialProps)
         <EuiTitle size="l">
           <h1>
             {i18n.translate('workspace.initial.title', {
-              defaultMessage: 'Welcome to OpenSearch',
+              defaultMessage: 'Welcome to ODIN workspaces',
             })}
           </h1>
         </EuiTitle>
@@ -191,62 +192,13 @@ export const WorkspaceInitial = ({ registeredUseCases$ }: WorkspaceInitialProps)
           {useCaseCards}
         </EuiFlexGroup>
       </EuiFlexItem>
-      <EuiFlexItem grow={false}>
-        <EuiFlexGroup justifyContent="spaceBetween" gutterSize="m">
-          <EuiFlexItem grow={false}>
-            <EuiText size="s" style={{ display: 'flex', alignItems: 'center' }}>
-              <EuiIcon type="reporter" size="s" color="primary" />
-              &nbsp;
-              <EuiLink
-                href={docLinks.links.opensearch.introduction}
-                target="_blank"
-                style={{ fontWeight: 'normal' }}
-              >
-                {i18n.translate('workspace.initial.link.documentation', {
-                  defaultMessage: 'Learn more from documentation',
-                })}
-              </EuiLink>
-              <EuiIcon
-                type="dashboardApp"
-                size="s"
-                color="primary"
-                style={{ marginLeft: '16px' }}
-              />
-              &nbsp;
-              <EuiLink
-                href="https://playground.opensearch.org/"
-                target="_blank"
-                style={{ fontWeight: 'normal' }}
-              >
-                {i18n.translate('workspace.initial.link.playground', {
-                  defaultMessage: 'Explore live demo environment at playground.opensearch.org',
-                })}
-              </EuiLink>
-            </EuiText>
-          </EuiFlexItem>
-          <EuiFlexItem grow={false}>
-            <EuiText size="s">
-              <EuiLink
-                style={{ fontWeight: 'normal' }}
-                onClick={() => {
-                  application.navigateToApp(WORKSPACE_LIST_APP_ID);
-                }}
-              >
-                {i18n.translate('workspace.initial.button.view', {
-                  defaultMessage: 'View all workspaces',
-                })}
-              </EuiLink>
-            </EuiText>
-          </EuiFlexItem>
-        </EuiFlexGroup>
-      </EuiFlexItem>
     </EuiFlexGroup>
   );
 
   return (
     <EuiPage style={{ minHeight: '100vh' }}>
       <EuiPageBody>
-        <EuiIcon type="logoOpenSearch" size="xl" style={{ position: 'fixed' }} />
+        <EuiIcon type={odinMark} size="xl" style={{ position: 'fixed' }} />
         <EuiSpacer size="xl" />
         <EuiSpacer size="l" />
         <EuiFlexGroup

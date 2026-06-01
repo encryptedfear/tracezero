@@ -35,7 +35,7 @@ exports[`WorkspaceInitial render workspace initial page normally when user is OS
               <h1
                 class="euiTitle euiTitle--large"
               >
-                Welcome to OpenSearch
+                Welcome to ODIN workspaces
               </h1>
             </div>
             <div
@@ -641,50 +641,6 @@ exports[`WorkspaceInitial render workspace initial page normally when user is OS
                       data-euiicon-type="reporter"
                     />
                      
-                    <a
-                      class="euiLink euiLink--primary"
-                      href="https://opensearch.org/docs/mocked-test-branch/opensearch/index/"
-                      rel="noopener noreferrer"
-                      style="font-weight: normal;"
-                      target="_blank"
-                    >
-                      Learn more from documentation
-                      <span
-                        aria-label="External link"
-                        class="euiLink__externalIcon"
-                        data-euiicon-type="popout"
-                      />
-                      <span
-                        class="euiScreenReaderOnly"
-                      >
-                        (opens in a new tab or window)
-                      </span>
-                    </a>
-                    <span
-                      color="primary"
-                      data-euiicon-type="dashboardApp"
-                      style="margin-left: 16px;"
-                    />
-                     
-                    <a
-                      class="euiLink euiLink--primary"
-                      href="https://playground.opensearch.org/"
-                      rel="noopener noreferrer"
-                      style="font-weight: normal;"
-                      target="_blank"
-                    >
-                      Explore live demo environment at playground.opensearch.org
-                      <span
-                        aria-label="External link"
-                        class="euiLink__externalIcon"
-                        data-euiicon-type="popout"
-                      />
-                      <span
-                        class="euiScreenReaderOnly"
-                      >
-                        (opens in a new tab or window)
-                      </span>
-                    </a>
                   </div>
                 </div>
                 <div
@@ -760,7 +716,7 @@ exports[`WorkspaceInitial render workspace initial page normally when user is no
               <h1
                 class="euiTitle euiTitle--large"
               >
-                Welcome to OpenSearch
+                Welcome to ODIN workspaces
               </h1>
             </div>
             <div
@@ -1236,51 +1192,6 @@ exports[`WorkspaceInitial render workspace initial page normally when user is no
                       color="primary"
                       data-euiicon-type="reporter"
                     />
-                     
-                    <a
-                      class="euiLink euiLink--primary"
-                      href="https://opensearch.org/docs/mocked-test-branch/opensearch/index/"
-                      rel="noopener noreferrer"
-                      style="font-weight: normal;"
-                      target="_blank"
-                    >
-                      Learn more from documentation
-                      <span
-                        aria-label="External link"
-                        class="euiLink__externalIcon"
-                        data-euiicon-type="popout"
-                      />
-                      <span
-                        class="euiScreenReaderOnly"
-                      >
-                        (opens in a new tab or window)
-                      </span>
-                    </a>
-                    <span
-                      color="primary"
-                      data-euiicon-type="dashboardApp"
-                      style="margin-left: 16px;"
-                    />
-                     
-                    <a
-                      class="euiLink euiLink--primary"
-                      href="https://playground.opensearch.org/"
-                      rel="noopener noreferrer"
-                      style="font-weight: normal;"
-                      target="_blank"
-                    >
-                      Explore live demo environment at playground.opensearch.org
-                      <span
-                        aria-label="External link"
-                        class="euiLink__externalIcon"
-                        data-euiicon-type="popout"
-                      />
-                      <span
-                        class="euiScreenReaderOnly"
-                      >
-                        (opens in a new tab or window)
-                      </span>
-                    </a>
                   </div>
                 </div>
                 <div

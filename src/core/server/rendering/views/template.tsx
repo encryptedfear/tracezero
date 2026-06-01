@@ -67,7 +67,7 @@ export const Template: FunctionComponent<Props> = ({
   );
 
   const favicon = injectedMetadata.branding.faviconUrl;
-  const applicationTitle = injectedMetadata.branding.applicationTitle || 'OpenSearch Dashboards';
+  const applicationTitle = injectedMetadata.branding.applicationTitle || 'ODIN';
 
   return (
     <html lang={locale}>
@@ -117,7 +117,7 @@ export const Template: FunctionComponent<Props> = ({
         {/* Ignoring all of the above, Safari picks this one */}
         <link
           rel="mask-icon"
-          color="#003553"
+          color="#0B1220"
           href={favicon ?? `${uiPublicUrl}/favicons/safari-pinned-tab.svg`}
         />
         <link rel="shortcut icon" href={favicon ?? `${uiPublicUrl}/favicons/favicon.ico`} />
